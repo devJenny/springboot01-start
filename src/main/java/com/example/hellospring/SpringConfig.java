@@ -2,6 +2,7 @@ package com.example.hellospring;
 
 //import com.example.hellospring.repository.JdbcMemberRepository;
 
+import com.example.hellospring.aop.TimeTraceAop;
 import com.example.hellospring.repository.JpaMemberRepository;
 import com.example.hellospring.repository.MemberRepository;
 import com.example.hellospring.service.MemberService;
@@ -25,6 +26,11 @@ public class SpringConfig {
 
         return new MemberService(memberRepository);
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 
 //    @Bean
 //    public MemberRepository memberRepository() {
